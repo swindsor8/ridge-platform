@@ -1,19 +1,6 @@
 version: '3.9'
 
 services:
-  postgres:
-    image: postgis/postgis:16-3.4
-    container_name: ridge_postgres
-    restart: unless-stopped
-    environment:
-      POSTGRES_DB: ridge_dev
-      POSTGRES_USER: ridge
-      POSTGRES_PASSWORD: ridge
-    ports:
-      - '5432:5432'
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
   redis:
     image: redis:7.2-alpine
     container_name: ridge_redis
@@ -25,5 +12,4 @@ services:
       - redis_data:/data
 
 volumes:
-  postgres_data:
   redis_data:
