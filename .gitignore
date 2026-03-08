@@ -33,6 +33,9 @@ __pycache__/
 .venv/
 *.egg-info/
 
+# Worktrees
+.worktrees/
+
 # Turbo
 .turbo/
 
