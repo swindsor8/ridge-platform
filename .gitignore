@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.expo/
+.next/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Python (AI services)
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Worktrees
+.worktrees/
+
+# Turbo
+.turbo/
+
+# Test coverage
+coverage/
+.nyc_output/

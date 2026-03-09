@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Ridge Hunt",
+    "slug": "ridge-hunt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ridge",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E3A2F"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ridge.hunt",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "RIDGE uses your location to track hunts and analyze wind direction.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "RIDGE uses your location in the background for breadcrumb tracking during active hunts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1E3A2F"
+      },
+      "package": "com.ridge.hunt",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "RIDGE uses your location to track hunts and analyze wind direction."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

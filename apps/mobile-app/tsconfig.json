@@ -1,0 +1,11 @@
+{
+  "extends": "@ridge/tsconfig/react-native.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@ridge/shared-types": ["../../packages/shared-types/src"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.d.ts", "expo-env.d.ts"],
+  "exclude": ["node_modules"]
+}
