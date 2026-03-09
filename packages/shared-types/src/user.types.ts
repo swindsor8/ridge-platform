@@ -2,14 +2,9 @@ export interface User {
   id: string;
   email: string;
   username: string;
-  displayName: string;
+  display_name: string;
   state: string;
-  createdAt: string;
-}
-
-export interface AuthTokens {
-  accessToken: string;
-  refreshToken?: string;
+  created_at: string;
 }
 
 export interface LoginCredentials {
